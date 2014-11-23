@@ -2,6 +2,7 @@ Memory_game
 ===========
 
 Memory game by Panco
+Link to Panco's tutorial:http://www.panco.si/memory/tutorial/
 
 How to install the game:
 Copy all the files you find in this repo to a directory on your machine.
