@@ -1,10 +1,12 @@
 var Memory = (function () {
 	var r = {
         	images: [
-		'http://www.panco.si/memory/editor/red-plane.png',
-		'http://www.panco.si/memory/editor/blue-plane.png',
-		'http://www.panco.si/memory/editor/red-tank.png',
-		'http://www.panco.si/memory/editor/blue-tank.png'
+		'img/dog1.jpg',
+		'img/dog2.jpg',
+		'img/dog3.jpg',
+		'img/dog4.jpg' 
+
+
         	 ],
 		colors: ['#99b433', '#1e7145', '#ff0097', '#9f00a7', '#7e3878', '#603cba', '#1d1d1d', '#00aba9', '#eff4ff', '#2d89ef', '#2b5797', '#ffc40d', '#e3a21a', '#da532c', '#ee1111', '#b91d47'],
 		draw: function () {
