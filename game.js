@@ -4,7 +4,11 @@ var Memory = (function () {
 		'img/dog1.jpg',
 		'img/dog2.jpg',
 		'img/dog3.jpg',
-		'img/dog4.jpg' 
+		'img/dog4.jpg',
+                'img/dog5.jpg',
+                'img/dog6.jpg',
+                'img/dog7.jpg',
+                'img/dog8.jpg' 
 
 
         	 ],
