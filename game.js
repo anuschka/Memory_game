@@ -1,5 +1,14 @@
+var sec = 0;
+function pad ( val ) { return val > 9 ? val : "0" + val; }
+	setInterval( function(){
+		document.getElementById("seconds").innerHTML=pad(++sec%60);
+		document.getElementById("minutes").innerHTML=pad(parseInt(sec/60,10));
+		}, 1000);
+
+
+
 var Memory = (function () {
-	var r = {
+            var r = {
         	images: [
 		'img/dog1.jpg',
 		'img/dog2.jpg',
@@ -12,11 +21,14 @@ var Memory = (function () {
 
 
         	 ],
+                
 		colors: ['#99b433', '#1e7145', '#ff0097', '#9f00a7', '#7e3878', '#603cba', '#1d1d1d', '#00aba9', '#eff4ff', '#2d89ef', '#2b5797', '#ffc40d', '#e3a21a', '#da532c', '#ee1111', '#b91d47'],
 		draw: function () {
+
 			var game = $('#game'),
 			shuffledPairs = [];
                         shuffledColors = r.shuffle(r.colors);                        
+
 
 			$.each(r.images, function (i, imageUrl) {
 			var elm = '<div class="memory-element" data-url="' + imageUrl + '"><img width="150" height="150" src="' + imageUrl + '" alt="Am I the correct one?" /></div>';
@@ -51,6 +63,7 @@ var Memory = (function () {
 			if (confirm('You win! Click OK to play another game.')) {
 			$('.memory-element').remove();
 			r.draw();
+                        sec = 0;
 		}	
 	}
 	});
@@ -104,6 +117,7 @@ var Memory = (function () {
 		initialize: function () {
 		r.draw();	
 		r.handleResolving();
+
 		}
 	};
 	
